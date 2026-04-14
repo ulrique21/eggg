@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us - Eggcipe</title>
+
+<style>
+body {
+    font-family: Arial;
+    background:#fff8e1;
+    margin:0;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    background:#fff3cd;
+}
+
+.logo {
+    font-weight:bold;
+    color:#ffb703;
+    text-decoration:none;
+}
+
+.container {
+    max-width:600px;
+    margin:50px auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+}
+
+input, textarea {
+    width:100%;
+    margin:8px 0;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button {
+    width:100%;
+    padding:12px;
+    background:#ffb703;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover {
+    background:#f77f00;
+}
+
+.msg {
+    margin-top:10px;
+    text-align:center;
+    color:green;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a class="logo" href="index.html">🥚 Eggcipe</a>
+    <div>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <input type="text" placeholder="Subject">
+    <textarea id="msg"></textarea>
+
+    <button onclick="send()">Send Message</button>
+
+    <div class="msg" id="output"></div>
+
+</div>
+
+<script>
+function send() {
+    document.getElementById("output").innerText =
+        "✅ Message sent (demo only - no backend / no email)";
+}
+</script>
+
+</body>
+</html>
